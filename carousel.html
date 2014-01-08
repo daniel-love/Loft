@@ -1,0 +1,35 @@
+<!-- TEMPORARY -->
+<html>
+	<head>
+		<style>
+		.carousel {
+			overflow: hidden;
+			position: absolute;
+			height: 150px;
+			width: 350px;
+		}
+		.carousel li {
+			display: none;
+			position: absolute; 
+			top: 0;
+			left: 0;
+		}
+		</style>
+	</head>
+	<body>
+		<ul class="carousel">
+			<li><img src="http://placehold.it/350x150&text=I am image 1"></li>
+			<li><img src="http://placehold.it/350x150&text=I am image 2"></li>
+			<li><img src="http://placehold.it/350x150&text=I am image 3"></li>
+		</ul>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/carousel.jquery.js"></script>
+		<script type="text/javascript">
+			$('.carousel').carousel({
+				transition_time: 1000, 
+				delay_time:4000,
+				method: 'fade'
+			});
+		</script>
+	</body>
+</html>
