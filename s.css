@@ -1,0 +1,84 @@
+/* 
+	Loft - HTML/CSS Boilerplate
+	https://github.com/daniel-love/Loft
+	License: The MIT License (MIT)
+	Version: idk
+*/
+
+@import url('./r.css'); /* Eric Meyers Reset CSS - http://meyerweb.com/eric/tools/css/reset/)
+
+/*
+	Grid
+*/
+
+.col {
+	border:0px solid rgba(0,0,0,0);
+	float:left;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	-moz-background-clip:padding-box !important;
+	-webkit-background-clip:padding-box !important;
+	background-clip:padding-box !important;
+}
+
+@media screen and (min-width: 0px) {
+
+	.col {
+		margin-left:3%;
+		padding:0 0px;
+	}
+
+	.row .col:first-child {
+		margin-left:0;
+	}
+
+	.one {
+		width:5.58333333333%;
+	}
+
+	.two {
+		width:14.1666666667%;
+	}
+
+	.three {
+		width:22.75%;
+	}
+
+	.four {
+		width:31.3333333333%;
+	}
+
+	.five {
+		width:39.9166666667%;
+	}
+
+	.six {
+		width:48.5%;
+	}
+
+	.seven {
+		width:57.0833333333%;
+	}
+
+	.eight {
+		width:65.6666666667%;
+	}
+
+	.nine {
+		width:74.25%;
+	}
+
+	.ten {
+		width:82.8333333333%;
+	}
+
+	.eleven {
+		width:91.4166666667%;
+	}
+
+	.twelve {
+		margin-left:0;
+		width:100%;
+	}
+}
