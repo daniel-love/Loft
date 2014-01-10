@@ -7,9 +7,7 @@
 		var object = $(this);
 		var step = $('li');
 
-		function steps() {
-			return object.find(step);
-		}
+		function steps() {return object.find(step);}
 
 		steps().fadeOut();
 		steps().first().addClass('active');
@@ -22,7 +20,7 @@
 
 			if (options['method'] == "fade") steps().eq(index).fadeOut(options['transition_time']);
 
-			if (steps().length == index + 1) index = -1;
+			if (steps().length >= index + 1) index = -1;
 
 			if (options['method'] == 'fade') steps().eq(index+1).fadeIn(options['transition_time']);
 
