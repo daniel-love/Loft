@@ -5,30 +5,66 @@
 		.carousel {
 			overflow: hidden;
 			position: absolute;
-			height: 150px;
-			width: 350px;
+
+			height: 250px;
+			width: 550px;
+
+			margin: 0.5em;
+			padding: 0;
+			/* Optional rounding! */
+			-moz-border-radius: 14px;
+			-webkit-border-radius: 14px;
+			border-radius: 14px;
 		}
+		
 		.carousel li {
 			display: none;
 			position: absolute; 
 			top: 0;
 			left: 0;
 		}
+
+		/* Example! */
+		.carousel li span#comment {
+			position: absolute;
+			width: 550px;
+			height: 32px;
+
+			bottom: 0;
+			left: 0;
+			
+			line-height: 32px;
+			vertical-align: middle;
+
+			font-size: 16px;
+			text-align: center;
+			color: white;
+
+			background-color: rgba(0, 0, 0, 0.6);
+		}
 		</style>
 	</head>
 	<body>
 		<ul class="carousel">
-			<li><img src="http://placehold.it/350x150&text=I am image 1"></li>
-			<li><img src="http://placehold.it/350x150&text=I am image 2"></li>
-			<li><img src="http://placehold.it/350x150&text=I am image 3"></li>
+			<li>
+				<img src="http://lorempixel.com/550/250/nightlife/">
+				<span id="comment">You can easily craft comments!</span>
+			</li>
+			<li>
+				<img src="http://lorempixel.com/550/250/city/">
+				<span id="comment">No JavaScript editing required</span>
+			</li>
+			<li>
+				<img src="http://lorempixel.com/550/250/fashion/">
+				<span id="comment">Some CSS editing though.. don't be that lazy</span>
+			</li>
 		</ul>
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/carousel.jquery.js"></script>
 		<script type="text/javascript">
 			$('.carousel').carousel({
 				transition_time: 1000, 
-				delay_time:4000,
-				method: 'fade'
+				delay_time:4000
 			});
 		</script>
 	</body>
