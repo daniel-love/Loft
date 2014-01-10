@@ -3,10 +3,16 @@ Loft
 
 A simple HTML/CSS boilerplate with a hint of JavaScript.
 
-Why Loft?
+What's Loft?
 ----
 
-We created Loft because of the amount of frameworks and boilerplates that already exists with little to no... uniqueness? So many frameworks are used and kept the same out of the box. This leads to a lot of sites looking the same. Which we find absolutely disgusting. Loft instead isn't a framework, but rather a simple but lovely foundation to help ease you into designing that next sexy web project of yours.
+We're not just jumping on the bandwagon trying to make the next Bootstrap or a standard template to sell. We're just fed up of re-writing the same things for projects, spending hours thinking of how big our headings will be or looking for that simple JS script that we used before but forgot to bookmark.
+
+So we made Loft, it's a simple compliation of HTML, CSS and JavaScript made by ourselfs (except the CSS reset) which we can use to jumpstart projects.
+
+It's not designed to copy and paste snippets to get that UI of your basic script or admin panel for your mates website, it's simply stick the CSS in, hook it up and add your own styles. We like to see it as a starting point for websites. At least thats what I'll be using for.
+
+More to follow in the coming weeks.
 
 Contributors
 ----
