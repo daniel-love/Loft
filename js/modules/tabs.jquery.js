@@ -1,8 +1,6 @@
 (function($) {
-	$.fn.tabs = function (options)
+	$.fn.tabs = function()
 	{
-		var options = $.extend({div: '.tabs'}, options);
-
 		$('ul.tabs').each(function(){
 			var _current, _body, _hrefs;
 
