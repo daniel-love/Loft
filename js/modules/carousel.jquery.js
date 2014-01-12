@@ -1,31 +1,35 @@
 (function($) {
-	$.fn.carousel = function(options)
-	{
-		console.log ("Debug: Called carousel()");
-		var options = $.extend({transition_time: 1000, delay_time: 4000}, options);
+    $.fn.carousel = function(options) {
+        console.log("Debug: Called carousel()");
+        var options = $.extend({
+            transition_time: 1000,
+            delay_time: 4000
+        }, options);
 
-		var object = $(this);
-		var step = $('li');
+        var object = $(this);
+        var step = $('li');
 
-		function steps() {return object.find(step);}
+        function steps() {
+            return object.find(step);
+        }
 
-		steps().fadeOut();
-		steps().first().addClass('active');
-		steps().first().fadeIn(options['transition_time']);
+        steps().fadeOut();
+        steps().first().addClass('active');
+        steps().first().fadeIn(options['transition_time']);
 
-		timer = setInterval(function (){
-			var index = object.find('li.active').index();
+        timer = setInterval(function() {
+            var index = object.find('li.active').index();
 
-			steps().eq(index).removeClass('active');
-			steps().eq(index).fadeOut(options['transition_time']);
+            steps().eq(index).removeClass('active');
+            steps().eq(index).fadeOut(options['transition_time']);
 
-			if (steps().length == index + 1) index = -1;
+            if (steps().length == index + 1) index = -1;
 
-			steps().eq(index+1).fadeIn(options['transition_time']);
-			steps().eq(index+1).addClass('active');
+            steps().eq(index + 1).fadeIn(options['transition_time']);
+            steps().eq(index + 1).addClass('active');
 
-		}, options['transition_time']+options['delay_time']);
-	}	
+        }, options['transition_time'] + options['delay_time']);
+    }
 })(jQuery);
 // To-Do
 // Add more methods
