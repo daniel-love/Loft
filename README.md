@@ -14,6 +14,11 @@ It's not designed to copy and paste snippets to get that UI of your basic script
 
 More to follow in the coming weeks.
 
+Suggestions
+----
+
+If you have any suggestions please email them to hello[at]danlove[dot]me :)
+
 Contributors
 ----
 

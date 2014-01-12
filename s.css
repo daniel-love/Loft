@@ -14,6 +14,9 @@
 body {
 	font-family: Helvetica, Arial, sans-serif;
 	width: 100%;
+	font-size: .9em;
+	font-weight: 300;
+	line-height: 1.4em;
 }
 
 /*
@@ -145,15 +148,36 @@ h6 {
 
 p {
 	margin: 5px 0 15px 0;
-	font-size: .9em;
-	font-weight: 400;
-	line-height: 1.4em;
 }
 
 	p.lead {
-		font-size: 1em;
+		font-size: 1.1em;
 		font-weight: 200;
 		line-height: 1.6em;
+	}
+
+/* Blockquote */
+
+blockquote {
+	display: block;
+	margin: 18px 0 18px 0;
+	padding: 18px 10px 18px 10px;
+	font-size: 1.5em;
+	font-weight: 300;
+	font-style: ;
+	line-height: 1.5em;
+	color: #5B5B5B;
+	border-top: solid 1px #E0E0E0;
+	border-bottom: solid 1px #E0E0E0;
+}
+
+	blockquote p {
+		margin: 0;
+		font-size: inherit;
+		font-weight: inherit;
+		font-style: inherit;
+		line-height: inherit;
+		color: inherit;
 	}
 
 /* Misc */
@@ -170,4 +194,134 @@ em {
 
 i {
 	font-style: italic;
+}
+
+pre {
+	margin: 20px 10px;
+	padding: 10px;
+	overflow: scroll;
+	background: #F0F0F0;
+	border: solid 1px #B5B5B5;
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+		    border-radius: 5px;
+}
+
+code {
+	display: inline-block;
+	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+	font-size: inherit;
+	line-height: 1;
+	color: #666666;
+}
+
+a {
+	font-weight: bolder;
+	color: inherit;
+	text-decoration: none;
+}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+/* 
+	Lists
+*/ 
+
+ol, ul, dl {
+	display: block;
+	margin: 5px 0 15px 0;
+	width: 100%;
+}
+
+ol li > ol,
+ul li > ul {
+	margin: 7.5px 0px 7.5px 30px;
+}
+
+/* Ordered List */
+
+ol li {
+	margin: 3.5px 0;
+	width: inherit;
+	list-style: decimal inside;
+}
+
+	ol li > ol li { list-style: lower-alpha inside; }
+
+		ol li > ol li > ol li { list-style: lower-roman inside; }
+
+ol.bold { font-weight: bolder; }
+ol.bold li span { font-weight: lighter; }
+
+/* List - Unordered List */
+
+ul li {
+	margin: 2px 0;
+	width: inherit;
+	list-style: disc inside;
+}
+
+	ul li > ul li { list-style: circle inside; }
+
+/* List Definition List */
+
+dl dt {
+	display: block;
+	margin: 5px 0;
+	font-weight: bolder;
+}
+
+dl dd {
+	display: block;
+	font-weight: lighter;
+}
+
+/*
+	Form
+*/
+
+input,
+input[type="text"],
+input[type="password"],
+textarea {
+	display: block;
+	margin: 10px 0;
+	padding: 6px 10px;
+	outline: none;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	color: #ABABAB;
+	-webkit-box-shadow: inset 0 .1px 1px .1px #A8A8A8;
+	        box-shadow: inset 0 .1px 1px .1px #A8A8A8;
+	-webkit-border-radius: 4px;
+	   -moz-border-radius: 4px;
+	        border-radius: 4px;
+	-webkit-transition: .1s linear;
+	   -moz-transition: .1s linear;
+	        transition: .1s linear;
+
+	border: solid 1px #B3B3B3;
+}
+
+input:hover,
+input[type="text"]:hover,
+input[type="password"]:hover,
+textarea:hover {
+	color: #3D3D3D !important;
+	border-color: #757575; 
+}
+
+input:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+	color: #3D3D3D !important;
+	border-color: #757575; 
+}
+
+.fullwidth {
+	width: 100%;
 }
