@@ -1,0 +1,36 @@
+<!-- TEMPORARY -->
+<html>
+	<head>
+		<style>
+		body {
+			color: black;
+		}
+		.mid {
+			margin-top: 800px;
+		}
+		.bottom {
+			margin-top: 800px;
+			margin-bottom: 50px;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="top">
+		<center>I'm a top. <a href="#" id="invoke">Click me to see a bottom!</a></center>
+		</div>
+		<div class="mid">
+		<center>Hey there, having a nice trip?</center>
+		</div>
+		<div class="bottom">
+		<center>I'm a bottom.
+		</div>
+		
+		<script type="text/javascript" src="js/vendor/jquery.js"></script>
+		<script type="text/javascript" src="js/modules/scroll.jquery.js"></script>
+		<script type="text/javascript">
+			$("#invoke").click(function(){
+				$('.bottom').scrollTo({speed: 8000, ease:'swing'});
+			})
+		</script>
+	</body>
+</html>
