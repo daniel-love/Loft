@@ -3,6 +3,7 @@
 	https://github.com/daniel-love/Loft
 	License: The MIT License (MIT)
 	Version: idk
+	Status: Development
 */
 
 @import url('./r.css'); /* Eric Meyers Reset CSS - http://meyerweb.com/eric/tools/css/reset/)
@@ -279,49 +280,54 @@ dl dd {
 }
 
 /*
-	Form
+	Forms
 */
+
+/* I gave up all hope here */
+
+form {
+	display: block;
+	width: 100%;
+	overflow: none;
+	box-sizing: border-box;
+	vertical-align: middle;
+}
 
 input,
 input[type="text"],
 input[type="password"],
 textarea {
 	display: block;
-	margin: 10px 0;
-	padding: 6px 10px;
+	margin: 0 0 .5em 0;
+	padding: .5em;
+	width: 100%;
+	height: 2.1em;
 	outline: none;
-	font-family: inherit;
-	font-size: inherit;
-	font-weight: inherit;
-	color: #ABABAB;
-	-webkit-box-shadow: inset 0 .1px 1px .1px #A8A8A8;
-	        box-shadow: inset 0 .1px 1px .1px #A8A8A8;
-	-webkit-border-radius: 4px;
-	   -moz-border-radius: 4px;
-	        border-radius: 4px;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
 	-webkit-transition: .1s linear;
 	   -moz-transition: .1s linear;
 	        transition: .1s linear;
 
-	border: solid 1px #B3B3B3;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	color: #ABABAB;
+	background: #ECECEC;
+	border: solid 1px transparent;
+	border-bottom: solid 1px transparent;
 }
 
 input:hover,
 input[type="text"]:hover,
 input[type="password"]:hover,
 textarea:hover {
-	color: #3D3D3D !important;
-	border-color: #757575; 
 }
 
 input:focus,
 input[type="text"]:focus,
 input[type="password"]:focus,
 textarea:focus {
-	color: #3D3D3D !important;
-	border-color: #757575; 
-}
-
-.fullwidth {
-	width: 100%;
+	border-bottom: solid 1px #ABABAB;
 }
