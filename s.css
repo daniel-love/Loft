@@ -20,6 +20,8 @@ body {
 	line-height: 1.4em;
 }
 
+.clr { clear: both; }
+
 /*
 	Grid
 */
@@ -181,6 +183,11 @@ blockquote {
 		color: inherit;
 	}
 
+	blockquote span {
+		display: block;
+		font-size: 80%;
+	}
+
 /* Misc */
 
 small {
@@ -313,21 +320,24 @@ textarea {
 	font-family: inherit;
 	font-size: inherit;
 	font-weight: inherit;
+	line-height: inherit;
 	color: #ABABAB;
-	background: #ECECEC;
-	border: solid 1px transparent;
-	border-bottom: solid 1px transparent;
+	background: #F0F0F0;
+	border: solid 2px transparent;
+	border-bottom: solid 2px transparent;
 }
 
 input:hover,
 input[type="text"]:hover,
 input[type="password"]:hover,
 textarea:hover {
+	border-bottom: solid 2px #CCCCCC;
 }
 
 input:focus,
 input[type="text"]:focus,
 input[type="password"]:focus,
 textarea:focus {
-	border-bottom: solid 1px #ABABAB;
+	border-bottom: solid 2px #ABABAB;
+	color: #333333;
 }
