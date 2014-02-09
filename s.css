@@ -30,11 +30,11 @@ body {
 	border:0px solid rgba(0,0,0,0);
 	float:left;
 	-webkit-box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	box-sizing:border-box;
-	-moz-background-clip:padding-box !important;
+	   -moz-box-sizing:border-box;
+			box-sizing:border-box;
 	-webkit-background-clip:padding-box !important;
-	background-clip:padding-box !important;
+	   -moz-background-clip:padding-box !important;
+			background-clip:padding-box !important;
 }
 
 @media screen and (min-width: 0px) {
@@ -273,7 +273,7 @@ ul li {
 
 	ul li > ul li { list-style: circle inside; }
 
-/* List Definition List */
+/* Definition List */
 
 dl dt {
 	display: block;
@@ -285,6 +285,37 @@ dl dd {
 	display: block;
 	font-weight: lighter;
 }
+
+/*
+	Tables
+*/
+
+table {
+	width: 100%;
+}
+
+	table thead tr th {
+		padding: 4px 8px;
+		text-align: left;
+		font-weight: bold;
+		border-bottom: solid 1px #9b9b9b;
+		border-left: solid 1px transparent;
+		border-right: solid 1px transparent;
+	}
+
+	table tbody tr td {
+		padding: 4px 8px;
+		border-bottom: solid 1px #D3D3D3;
+	}
+
+		table tbody tr:hover {
+			background: #F7F7F7;
+		}
+
+	.valid { background-color: #DAFFB3; }
+	.warn { background-color: #FFF2BE; }
+	.danger { background-color: #FAACAC; }
+	.info { background-color: #B3D8FF; }
 
 /*
 	Forms
