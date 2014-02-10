@@ -1,4 +1,14 @@
+// hyperlinks (slightly variant from main CSS)
+a {
+	font-weight: bolder;
+	color: @bluelt;
+	text-decoration: none;
 
+	:hover {
+		text-decoration: underline;
+		color: @greenlt;
+	}
+}
 
 h1 {
 	margin-bottom: @header-margin;
@@ -28,6 +38,7 @@ h4 {
 	line-height: .5em;
 }
 
+// Variant from main CSS
 h5 {
 	margin-bottom: @header-margin;
 	font-size: @h5-font-size;
@@ -68,5 +79,19 @@ blockquote {
 	span {
 		display: block;
 		font-size: 80%;
+	}
+}
+
+/* Definition List */
+dl {
+	dt {
+		display: block;
+		margin: 5px 0;
+		font-weight: bolder;
+	}
+
+	dd {
+		display: block;
+		font-weight: lighter;
 	}
 }
