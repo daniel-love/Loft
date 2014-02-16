@@ -22,6 +22,13 @@ body {
 
 .clr { clear: both; }
 
+hr {
+	display: block;
+	margin: 20px 0px;
+	border: none;
+	border-bottom: solid 1px #E0E0E0;
+}
+
 /*
 	Grid
 */
@@ -205,7 +212,7 @@ i {
 }
 
 pre {
-	margin: 20px 10px;
+	margin: 20px 0px;
 	padding: 10px;
 	overflow: scroll;
 	background: #F0F0F0;
@@ -303,25 +310,24 @@ table {
 		border-right: solid 1px transparent;
 	}
 
-	table tbody tr td {
-		padding: 4px 8px;
+	table tbody tr {
 		border-bottom: solid 1px #D3D3D3;
 	}
 
 		table tbody tr:hover {
 			background: #F7F7F7;
+			border-bottom: solid 1px #D3D3D3;
 		}
 
-	.valid { background-color: #DAFFB3; }
-	.warn { background-color: #FFF2BE; }
-	.danger { background-color: #FAACAC; }
-	.info { background-color: #B3D8FF; }
+		table tbody tr td {
+			padding: 4px 8px;
+		}
 
 /*
 	Forms
 */
 
-/* I gave up all hope here */
+/* I gave up all hope here, so do tell me where I've gone wrong. */
 
 form {
 	display: block;
@@ -353,22 +359,110 @@ textarea {
 	font-weight: inherit;
 	line-height: inherit;
 	color: #ABABAB;
-	background: #F0F0F0;
-	border: solid 2px transparent;
-	border-bottom: solid 2px transparent;
+	background: #FFFFFF;
+	border: solid 1px #BBBBBB;
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+			border-radius: 5px;
 }
 
 input:hover,
 input[type="text"]:hover,
 input[type="password"]:hover,
 textarea:hover {
-	border-bottom: solid 2px #CCCCCC;
+	
 }
 
 input:focus,
 input[type="text"]:focus,
 input[type="password"]:focus,
 textarea:focus {
-	border-bottom: solid 2px #ABABAB;
+	-webkit-box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.1);
+	   -moz-box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.1);
+			box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.1);
 	color: #333333;
+}
+
+input[type="submit"],
+input[type="button"],
+button,
+a.bttn {
+	display: inline-block;
+	position: relative;
+	width: auto;
+	height: auto;
+	padding: 7px 15px;
+
+	outline: none;
+	cursor: pointer;
+	font-size: 1em;
+	font-weight: 300 !important;
+	line-height: auto;
+	color: #FDFDFD;
+	border: solid 3px transparent;
+	background: #5E5E5E;
+	-webkit-border-radius: 8px;
+	   -moz-border-radius: 8px;
+			border-radius: 8px;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+a.bttn:hover {
+	text-decoration: none;
+	background: #474747;
+}
+
+input[type="submit"]:active,
+input[type="button"]:active,
+button:active,
+a.bttn:active {
+	border-color: #5E5E5E;
+}
+
+/*
+	Common Styles
+*/
+
+.valid {
+	background-color: #DAFFB3;
+	border-color: #AEDD7C;
+}
+
+.warn {
+	background-color: #FFF2BE;
+	border-color: #D4BE66;
+}
+
+.danger {
+	background-color: #FAACAC;
+	border-color: #D67F7F;
+}
+
+.info {
+	background-color: #B3D8FF;
+	border-color: #79A5D3;
+}
+
+/* Stop tables from having grey styles when hovering */
+
+tr.valid:hover {
+	background-color: #DAFFB3;
+	border-color: #AEDD7C;
+}
+
+tr.warn:hover {
+	background-color: #FFF2BE;
+	border-color: #D4BE66;
+}
+
+tr.danger:hover {
+	background-color: #FAACAC;
+	border-color: #D67F7F;
+}
+
+tr.info:hover {
+	background-color: #B3D8FF;
+	border-color: #79A5D3;
 }
