@@ -33,9 +33,16 @@ Installing
 Getting Started
 ----
 
-[to be updated]
+In the HEAD tags add:
 
-Documentation
-----
+```HTML
+<link rel="stylesheet" href="css/reset.css" type="text/css" />
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+```
+  
+Just before the closing BODY tag add:
 
-[to be update]
+```HTML
+<script type="text/javascript" src="js/vendor/jquery.min.js"></script>
+<script type="text/javascript" src="js/loft.min.js"></script>
+```
