@@ -7,7 +7,7 @@
         }, options);
 
         $("html, body").animate({
-                scrollTop: $(this).offset().top
-            },options['speed'],options['ease']);
+            scrollTop: $(this).offset().top
+        }, options['speed'], options['ease']);
     }
 })(jQuery);
