@@ -16,6 +16,11 @@
 			h1.dev_caption {
 				border-bottom: solid 1px #DDDDDD;
 			}
+
+			.new_section {
+				margin: 20px 0;
+			}
+
 		</style>
 
 	</head>
@@ -28,7 +33,7 @@
 
 			<h1>Lorem ipsum dolor sit amet. <small>I'm small!</small></h1>
 
-			<p class="lead">Lorem <a href="#">ipsum dolor</a> sit amet, consectetuer <u>adipiscing</u> elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+			<p class="lead">Lorem <a href="#">ipsum dolor</a> sit amet, consectetuer <u>adipiscing</u> elit. Aenean <strong>commodo</strong> ligula <b>eget</b> dolor. Aenean <em>massa</em>. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
 
 			<p>Lorem ipsum dolor sit amet, <code>consectetuer adipiscing</code> elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla <a href="#">consequat</a> massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
 
@@ -131,12 +136,13 @@
 
 			<blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.<span>Daniel Love</span></p></blockquote>
 
-			<pre><code>#header h1 a { 
-	display: block; 
-	width: 300px; 
-	height: 80px; 
+			<pre><code>#header h1 a {
+	display: block;
+	width: 300px;
+	height: 80px;
 }</code></pre>
 
+			<hr>
 
 			<div class="row">
 				<div class="col four">
@@ -144,6 +150,7 @@
 						<input type="text" placeholder="Hello World" />
 						<input type="text" placeholder="Hello World" />
 						<input type="text" placeholder="Hello World" />
+						<textarea class="inline-form" placeholder="A standard textarea" ></textarea>
 						<input type="submit" value="Input" />
 						<input type="button" value="Input" />
 						<button>Button</button>
@@ -159,7 +166,34 @@
 
 			</div>
 
+			<hr>
+
 			<div class="clr"></div>
+
+			<div class="new_section">
+
+				<input class="inline-form form-xsmall" type="text" placeholder="Hello World" />
+				<input class="inline-form form-small" type="text" placeholder="Hello World" />
+				<input class="inline-form form-medium" type="text" placeholder="Hello World" />
+				<input class="inline-form form-large" type="text" placeholder="Hello World" />
+				<input class="inline-form form-xlarge" type="text" placeholder="Hello World" />
+				<input class="inline-form" type="submit" value="Input" />
+				<input class="inline-form" type="button" value="Input" />
+				<button class="inline-form">Button</button>
+				<a href="#" class="bttn inline-form">A Link</a>
+
+				<div class="clr"></div>
+
+				<input class="form-xsmall" type="text" placeholder="Hello World" />
+				<input class="form-small" type="text" placeholder="Hello World" />
+				<input class="form-medium" type="text" placeholder="Hello World" />
+				<input class="form-large" type="text" placeholder="Hello World" />
+				<input class="form-xlarge" type="text" placeholder="Hello World" />
+				<input type="submit" value="Input" />
+
+			</div>
+
+			<hr class="clr" />
 
 			<div class="row">
 				<div class="col four">
