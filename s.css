@@ -222,6 +222,31 @@ pre {
 		    border-radius: 5px;
 }
 
+kbd {
+	padding: 3px 6px;
+	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+	font-size: 90%;
+	color: #fff;
+	background-color: #3C3C3C;
+	-webkit-box-shadow: inset 0 0px 10px #000;
+	   -moz-box-shadow: inset 0 0px 10px #000;
+			box-shadow: inset 0 0px 10px #000;
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+			border-radius: 5px;
+}
+
+abbr {
+	border-bottom: dashed 1px #333;
+	cursor: help;
+}
+
+address {
+	margin-bottom: 20px;
+	line-height: 1.5em;
+	font-family: inherit;
+}
+
 code {
 	display: inline-block;
 	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
@@ -301,27 +326,31 @@ table {
 	width: 100%;
 }
 
-	table thead tr th {
-		padding: 4px 8px;
+	table tr {
+		border-bottom: solid 1px #c4c4c4;
+	}
+
+		table tr:hover {
+			background: #F7F7F7;
+		}
+
+		/* Stop th from changing background upon hover */
+
+		table tr:hover th {
+			background: #fff;
+		}
+
+	table th {
+		padding: 6px 10px;
 		text-align: left;
 		font-weight: bold;
-		border-bottom: solid 1px #9b9b9b;
-		border-left: solid 1px transparent;
-		border-right: solid 1px transparent;
+		border-bottom: solid 1px #808080;
 	}
 
-	table tbody tr {
-		border-bottom: solid 1px #D3D3D3;
+	table td {
+		padding: 6px 10px;
 	}
 
-		table tbody tr:hover {
-			background: #F7F7F7;
-			border-bottom: solid 1px #D3D3D3;
-		}
-
-		table tbody tr td {
-			padding: 4px 8px;
-		}
 
 /*
 	Forms
@@ -353,7 +382,7 @@ textarea {
 	-webkit-transition: .3s linear;
 	   -moz-transition: .3s linear;
 	        transition: .3s linear;
-
+	/* - */
 	font-family: inherit;
 	font-size: inherit;
 	font-weight: inherit;
@@ -365,6 +394,8 @@ textarea {
 	   -moz-border-radius: 5px;
 			border-radius: 5px;
 }
+
+textarea { height: 68px; }
 
 input:hover,
 input[type="text"]:hover,
@@ -397,6 +428,7 @@ a.bttn {
 	font-weight: 300 !important;
 	line-height: auto;
 	color: #FDFDFD;
+	text-align: center;
 	border: solid 3px transparent;
 	background: #5E5E5E;
 	-webkit-border-radius: 8px;
@@ -468,22 +500,22 @@ a.bttn.inline-form  {
 
 .valid {
 	background-color: #DAFFB3;
-	border-color: #AEDD7C;
+	border-color: #AEDD7C !important;
 }
 
 .warn {
 	background-color: #FFF2BE;
-	border-color: #D4BE66;
+	border-color: #D4BE66 !important;
 }
 
 .danger {
 	background-color: #FAACAC;
-	border-color: #D67F7F;
+	border-color: #D67F7F !important;
 }
 
 .info {
 	background-color: #B3D8FF;
-	border-color: #79A5D3;
+	border-color: #79A5D3 !important;
 }
 
 	/* Stop tables from having grey styles when hovering */
