@@ -10,12 +10,12 @@ We're not jumping on the bandwagon and trying to make the next Bootstrap, becaus
 
 So we made Loft. It's a collection of CSS and JS which will (hopfully) help to jump start your projects.
 
-You'll notice our stylesheet is mostly built up of basic styles, we've not added any pretty styles or anything like that (apart from a few elements), so all you have to do is place the files in your project, add your own styles to 's.css' you're done!
+You'll notice our stylesheet is mostly built up of basic styles, we've not added any pretty styles or anything like that (apart from a few elements), so all you have to do is place the files in your project, add your own styles to `s.css` you're done!
 
 Suggestions
 ----
 
-If you have any suggestions please email them to hello[at]danlove[dot]me or me[at]derek-	martinez[dot]us
+If you have any suggestions please email them to hello[at]danlove[dot]me or me[at]derek-martinez[dot]us
 
 Contributors
 ----
