@@ -6,18 +6,16 @@ A simple HTML/CSS boilerplate with a hint of JavaScript.
 What's Loft?
 ----
 
-We're not just jumping on the bandwagon trying to make the next Bootstrap or a standard template to sell. We're just fed up of re-writing the same things for projects, spending hours thinking of how big our headings will be or looking for that simple JS script that we used before but forgot to bookmark.
+We're not jumping on the bandwagon and trying to make the next Bootstrap, because we don't want that. What we're doing is making something to make our lives easier. We're fed up of rewriting the same styles and the same JavaScript for projects.
 
-So we made Loft, it's a simple compilation of HTML, CSS and JavaScript made by ourselfs (except the CSS reset) which we can use to jump start projects.
+So we made Loft. It's a collection of CSS and JS which will (hopfully) help to jump start your projects.
 
-It's not designed to copy and paste snippets to get that UI of your basic script or admin panel for your mates website, it's simply stick the CSS in, hook it up and add your own styles. We like to see it as a starting point for websites. At least thats what I'll be using for.
-
-More to follow in the coming weeks.
+You'll notice our stylesheet is mostly built up of basic styles, we've not added any pretty styles or anything like that (apart from a few elements), so all you have to do is place the files in your project, add your own styles to 's.css' you're done!
 
 Suggestions
 ----
 
-If you have any suggestions please email them to hello[at]danlove[dot]me :)
+If you have any suggestions please email them to hello[at]danlove[dot]me or me[at]derek-	martinez[dot]us
 
 Contributors
 ----
@@ -33,14 +31,13 @@ Installing
 Getting Started
 ----
 
-In the HEAD tags add:
+In the <HEAD> tags add:
 
 ```HTML
-<link rel="stylesheet" href="css/reset.css" type="text/css" />
-<link rel="stylesheet" href="css/style.css" type="text/css" />
+<link rel="stylesheet" href="s.css" type="text/css" />
 ```
   
-Just before the closing BODY tag add:
+Just before the closing <BODY> tag add:
 
 ```HTML
 <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
