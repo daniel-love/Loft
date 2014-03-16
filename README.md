@@ -31,15 +31,17 @@ Installing
 Getting Started
 ----
 
-In the <HEAD> tags add:
+Add the style sheet to the head section:
 
 ```HTML
 <link rel="stylesheet" href="s.css" type="text/css" />
 ```
   
-Just before the closing <BODY> tag add:
+Then add your JavaScript (preferably at the bottom):
 
 ```HTML
 <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
 <script type="text/javascript" src="js/loft.min.js"></script>
 ```
+
+Then open up `s.css` and add your styles!
