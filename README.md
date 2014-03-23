@@ -24,7 +24,7 @@ Developer: Derek Martinez ([@derekmartinezx](http://twitter.com/derekmartinezx))
 
 ## Getting Started
 
-Add the style sheet to the head section (don't worry, we've included a reset stylesheet, just make sure you add `r.css`):
+Add the style sheet to the head section (make sure you add 	`r.css` for the reset!):
 
 ```HTML
 <link rel="stylesheet" href="s.css" type="text/css" />
