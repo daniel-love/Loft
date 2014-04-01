@@ -4,7 +4,7 @@
 
         var options = $.extend({
             fadeIn: false,
-            speed: slow
+            speed: 100
         }, options);
 
         return this.find(tag).click(function(e) {
@@ -25,8 +25,8 @@
                 if (options['fadeIn']) {
                     $('.lightbox').css('display', 'none');
                 }
-
                 // Add new div to end of page! =))
+
                 $('body').append(_div);
 
                 if (options['fadeIn']) {
@@ -35,7 +35,7 @@
 
                 // Add listener even for hiding
                 $('.lightbox p').click(function(e) {
-                    $('.lightbox').hide();
+                    $('.lightbox').remove();
                 });
             }
         });
