@@ -1,6 +1,5 @@
 # Loft
 
-
 A simple HTML/CSS boilerplate with a hint of JavaScript.
 
 ## What's Loft?
@@ -20,8 +19,6 @@ If you have any suggestions please email them to hello[at]danlove[dot]me or me[a
 Designer: Daniel Love ([@daniel_love](http://twitter.com/daniel_love))  
 Developer: Derek Martinez ([@derekmartinezx](http://twitter.com/derekmartinezx))
 
-
-
 ## Getting Started
 
 Add the style sheet to the head section (make sure you add 	`r.css` for the reset!):
@@ -36,5 +33,4 @@ Then add your JavaScript (preferably at the bottom):
 <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
 <script type="text/javascript" src="js/loft.min.js"></script>
 ```
-
 Then open up `s.css` and add your styles!
