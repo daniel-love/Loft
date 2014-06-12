@@ -222,8 +222,7 @@ pre {
 		    border-radius: 5px;
 }
 
-kbd,
-code {
+kbd {
 	padding: 3px 6px;
 	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
 	font-size: 90%;
@@ -248,13 +247,13 @@ address {
 	font-family: inherit;
 }
 
-/*code {
+code {
 	display: inline-block;
 	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
 	font-size: inherit;
 	line-height: 1;
 	color: #666666;
-}*/
+}
 
 a {
 	font-weight: bolder;
@@ -500,50 +499,72 @@ a.bttn.inline-form  {
 */
 
 .valid {
-	background-color: #DAFFB3;
-	border-color: #AEDD7C !important;
+	background-color: #B4E97C;
+	border-color: #B4E97C !important;
 }
 
 .warn {
-	background-color: #FFF2BE;
-	border-color: #D4BE66 !important;
+	background-color: #F8DC69;
+	border-color: #F8DC69 !important;
 }
 
 .danger {
-	background-color: #FAACAC;
-	border-color: #D67F7F !important;
+	background-color: #DB4B4B;
+	border-color: #DB4B4B !important;
 }
 
 .info {
-	background-color: #B3D8FF;
-	border-color: #79A5D3 !important;
+	background-color: #4B9DC3;
+	border-color: #4B9DC3 !important;
 }
 
 	/* Stop tables from having grey styles when hovering */
 
 	tr.valid:hover {
-		background-color: #DAFFB3;
-		border-color: #AEDD7C;
+		background-color: #B4E97C;
+		border-color: #B4E97C;
 	}
 
 	tr.warn:hover {
-		background-color: #FFF2BE;
-		border-color: #D4BE66;
+		background-color: #F8DC69;
+		border-color: #F8DC69;
 	}
 
 	tr.danger:hover {
-		background-color: #FAACAC;
-		border-color: #D67F7F;
+		background-color: #DB4B4B;
+		border-color: #DB4B4B;
 	}
 
 	tr.info:hover {
-		background-color: #B3D8FF;
-		border-color: #79A5D3;
+		background-color: #4B9DC3;
+		border-color: #4B9DC3;
+	}
+
+/*
+	Banners
+*/
+
+.banner {
+	display: block;
+	margin: 25px 0;
+	padding: 10px 10px;
+}
+
+	.banner > p {
+		margin: 0;
+	}
+
+	.banner > p.alt {
+		color: #fff;
 	}
 
 /*
 	Lightbox
 */
+
+img.lightmeup {
+	cursor: pointer;
+}
 
 .lightbox {
 	position: fixed;
@@ -556,13 +577,22 @@ a.bttn.inline-form  {
 	background-color: rgba(0, 0, 0, 0.8);
 }
 
-	.lightbox > p {
-		font-weight: 600;
+	.lightbox > p.close {
+		display: block;
+		float: right;
+		margin: 0;
+		padding: 15px 20px;
+
+		cursor: pointer;
+		font-size: 2em;
+		font-weight: 300;
 		color: #fff;
 		text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.9);
 	}
 
 	.lightbox > img {
 		display: block;
-		left: 	
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 17%;
 	}

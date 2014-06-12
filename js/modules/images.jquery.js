@@ -16,11 +16,11 @@
                 var _image = $(this).attr('src');
                 var _div =
                     '<div class="lightbox">' + // Style: Main Div
-                '<p>x</p>' + // Style: CLOSE BUTTON
-                '<div class="image"></div>' + // Style: Image holder
-                '<img src="' + _image + '"/>' + // Style: Images
-                '</div>' + // Close Image Holder
-                '</div>'; // Close Main Div
+                    '<p class="close">x</p>' + // Style: CLOSE BUTTON
+                    '<div class="image"></div>' + // Style: Image holder
+                    '<img src="' + _image + '"/>' + // Style: Images
+                    '</div>' + // Close Image Holder
+                    '</div>'; // Close Main Div
 
                 if (options['fadeIn']) {
                     $('.lightbox').css('display', 'none');
