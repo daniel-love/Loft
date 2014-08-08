@@ -1,0 +1,30 @@
+{
+  "name": "Loft",
+  "version": "0.0.1",
+  "homepage": "https://github.com/daniel-love/Loft",
+  "authors": [
+    "Derek Martinez <me@derek-martinez.us>"
+  ],
+  "description": "A lightweight CSS & JS Framework",
+  "main": "s.css",
+  "keywords": [
+    "css",
+    "js",
+    "framework",
+    "lightweight",
+    "template"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "test",
+    "tests",
+    "js/modules",
+    "js/vendor"
+  ],
+  "dependencies": {
+    "jquery": ">= 1.9.0"
+  }
+}
