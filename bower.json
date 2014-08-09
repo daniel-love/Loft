@@ -16,7 +16,6 @@
     "template"
   ],
   "license": "MIT",
-  "private": false,
   "ignore": [
     "**/.*",
     "bower_components",
