@@ -9,22 +9,22 @@
   "description": "A lightweight CSS & JS Framework",
   "main": "s.css",
   "keywords": [
-    "css",
-    "js",
-    "framework",
-    "lightweight",
-    "template"
+    "CSS",
+    "HTML5",
+    "CSS3",
+    "CSS",
+    "Framework",
+    "Lightweight",
+    "Responsive"
   ],
   "license": "MIT",
   "ignore": [
     "**/.*",
     "bower_components",
     "test",
-    "tests",
-    "js/modules",
-    "js/vendor"
-  ],
-  "dependencies": {
-    "jquery": ">= 1.9.0"
-  }
+    "tests"
+    ],
+    "dependencies": {
+      "jquery": ">= 1.9.0"
+    }
 }
