@@ -78,7 +78,7 @@
 
         var options = $.extend({
             fadeIn: false,
-            speed: slow
+            speed: 100
         }, options);
 
         return this.find(tag).click(function(e) {
