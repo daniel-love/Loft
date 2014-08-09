@@ -22,13 +22,10 @@ Developer: Derek Martinez ([@derekmartinezx](http://twitter.com/derekmartinezx))
 ## Getting Started (w/o Bower)
 
 Add the style sheet to the head section (make sure you add 	`r.css` for the reset!):
-
 ```HTML
 <link rel="stylesheet" href="css/style.css" type="text/css" />
 ```
-  
 Then add your JavaScript (preferably at the bottom):
-
 ```HTML
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/loft.min.js"></script>
@@ -37,4 +34,25 @@ Then open up `style.css` and add your styles!
 
 ## Getting Started (w/ Bower)
 
-Coming soon!
+Install using Bower:
+```
+bower install Loft
+```
+or add to your bower.json:
+```JSON
+{
+  ...
+  "dependencies": {
+    ...
+    "Loft": "master"
+  }
+}
+```
+Include CSS in your HTML:
+```HTML
+<link rel="stylesheet" href="bower_components/Loft/dist/css/style.css" type="text/css" />
+```
+Include JavaScript in your HTML:
+```HTML
+<script type="text/javascript" src="bower_components/Loft/dist/js/loft.min.js"></script>
+```
