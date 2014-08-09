@@ -1,8 +1,9 @@
 {
   "name": "Loft",
-  "version": "0.0.1",
+  "version": "0.5.0",
   "homepage": "https://github.com/daniel-love/Loft",
   "authors": [
+    "Daniel Love <hello@danlove.me",
     "Derek Martinez <me@derek-martinez.us>"
   ],
   "description": "A lightweight CSS & JS Framework",
@@ -15,7 +16,7 @@
     "template"
   ],
   "license": "MIT",
-  "private": true,
+  "private": false,
   "ignore": [
     "**/.*",
     "bower_components",
