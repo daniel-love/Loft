@@ -19,18 +19,22 @@ If you have any suggestions please email them to hello[at]danlove[dot]me or me[a
 Designer: Daniel Love ([@daniel_love](http://twitter.com/daniel_love))  
 Developer: Derek Martinez ([@derekmartinezx](http://twitter.com/derekmartinezx))
 
-## Getting Started
+## Getting Started (w/o Bower)
 
 Add the style sheet to the head section (make sure you add 	`r.css` for the reset!):
 
 ```HTML
-<link rel="stylesheet" href="s.css" type="text/css" />
+<link rel="stylesheet" href="css/style.css" type="text/css" />
 ```
   
 Then add your JavaScript (preferably at the bottom):
 
 ```HTML
-<script type="text/javascript" src="js/vendor/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/loft.min.js"></script>
 ```
-Then open up `s.css` and add your styles!
+Then open up `style.css` and add your styles!
+
+## Getting Started (w/ Bower)
+
+Coming soon!
