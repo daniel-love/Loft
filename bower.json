@@ -7,7 +7,12 @@
     "Derek Martinez <me@derek-martinez.us>"
   ],
   "description": "A lightweight CSS & JS Framework",
-  "main": "s.css",
+  "main": [
+      "dist/css/reset.css",
+      "dist/css/style.css",
+      "dist/js/loft.js",
+      "dist/js/loft.min.js"
+  ],
   "keywords": [
     "CSS",
     "HTML5",
@@ -22,7 +27,8 @@
     "**/.*",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "examples"
     ],
     "dependencies": {
       "jquery": ">= 1.9.0"
