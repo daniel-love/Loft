@@ -3,7 +3,7 @@
   "version": "0.5.1",
   "homepage": "https://github.com/daniel-love/Loft",
   "authors": [
-    "Daniel Love <hello@danlove.me",
+    "Daniel Love <hello@danlove.me>",
     "Derek Martinez <me@derek-martinez.us>"
   ],
   "description": "A lightweight CSS & JS Framework",
