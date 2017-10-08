@@ -1,15 +1,14 @@
 {
   "name": "Loft",
-  "version": "0.5.4",
+  "version": "0.5.5",
   "homepage": "https://github.com/daniel-love/Loft",
   "authors": [
-    "Daniel Love <hello@danlove.me>",
+    "Daniel Love <mail.danlove@gmail.com>",
     "Derek Martinez <me@derek-martinez.us>"
   ],
   "description": "A lightweight CSS & JS Framework",
   "main": [
-      "dist/css/reset.css",
-      "dist/css/style.css",
+      "dist/css/loft.css",
       "dist/js/loft.js",
       "dist/js/loft.min.js"
   ],
