@@ -86,7 +86,7 @@ body {
     width: 100%;
     font-size: 15px;
     font-weight: 300;
-    line-height: 20px;
+    line-height: 22px;
 }
 
 hr {
@@ -139,7 +139,7 @@ h5 {
     line-height: .9em;
 }
 
-h6 {
+h6 {sed
     margin-bottom: .5rem;
     font-size: .8em;
     font-weight: 900;
@@ -224,10 +224,13 @@ address {
 code,
 pre {
     font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    font-size: .8rem;
 }
 
-code {    
-    padding: .2rem .4rem;
+code {
+    padding: .1rem .2rem;
+    /*padding: 2px 4px;*/
+    line-height: inherit;
     color: #B45C19;
     background: #FFBD8A;
     border-bottom: solid 2px #FFA557;
@@ -252,11 +255,10 @@ pre code {
 }
 
 a {
-    font-weight: bold;
-    color: inherit;
-    text-decoration: underline;
+    color: #3174ab;
+    text-decoration: none;
 }
-    a:hover { text-decoration: none; }
+    a:hover { text-decoration: underline; }
 
 
 
@@ -316,14 +318,14 @@ table {
     width: 100%;
 }
 
-    table thead tr { border-bottom: solid 3px #d7d7d7;}
+    table thead tr { border-bottom: solid 3px #dfdfdf;}
     table thead tr th {
         padding: .4rem;
         font-weight: bold;
         text-align: left;
     }
 
-    table tbody tr { border-bottom: solid 1px #d7d7d7; }
+    table tbody tr { border-bottom: solid 1px #dfdfdf; }
     table tbody tr td { padding: .4rem; }
 
 
@@ -361,7 +363,7 @@ textarea {
     outline: none;
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
-                    box-sizing: border-box;
+            box-sizing: border-box;
     -webkit-transition: .05s linear;
        -moz-transition: .05s linear;
             transition: .05s linear;
@@ -371,7 +373,7 @@ textarea {
     line-height: inherit;
     color: #161616;
     background: #FFFFFF;
-    border: solid 1px #BBBBBB;
+    border: solid 2px #dfdfdf;
 }
 
     textarea { height: 68px; }
@@ -391,7 +393,7 @@ input[type="text"]:hover,
 input[type="password"]:hover,
 select:hover,
 textarea:hover {
-    border-color: #7C7C7C;
+    border-color: #cdcdcd;
 }
 
 input:focus,
@@ -399,7 +401,7 @@ input[type="text"]:focus,
 input[type="password"]:focus,
 select:focus,
 textarea:focus {
-    border: solid 1px #616161;
+    border: solid 2px #616161;
     color: #333333;
 }
 
@@ -413,16 +415,16 @@ a.bttn {
     outline: none;
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
-                    box-sizing: border-box;
+            box-sizing: border-box;
     -webkit-transition: .07s linear;
        -moz-transition: .07s linear;
             transition: .07s linear;
     font-family: inherit;
     font-weight: normal;
-    line-height: .1em;
+    line-height: .2em;
     color: #444444;
     background: #FFFFFF;
-    border: solid 1px #BBBBBB;
+    border: solid 2px #dfdfdf;
 }
 
 input[type="submit"]:hover,
@@ -430,7 +432,7 @@ input[type="button"]:hover,
 button:hover,
 a.bttn:hover {
     text-decoration: none;
-    background: #eeeeee;
+    background: #dfdfdf;
 }
 
 input[type="submit"]:active,
