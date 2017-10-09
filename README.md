@@ -8,7 +8,7 @@ We're not jumping on the bandwagon and trying to make the next Bootstrap, becaus
 
 So we made Loft - Loft is a simple collection of CSS and JS files to start off your project. Loft contains:
 
-- A CSS Reset (by Eric Meyer)[https://meyerweb.com/eric/tools/css/reset/index.html].
+- A CSS Reset [by Eric Meyer](https://meyerweb.com/eric/tools/css/reset/index.html).
 - Pre styles HTML elements, such as Headings, Hyperlinks, Preformatted content and tables.
 - A simple HTML/CSS grid.
 - A JS Lightbox.
