@@ -4,14 +4,12 @@
  * License: MIT License (MIT)
  *
  * --------------------------------------------------
+ * loft.css
+ * --------------------------------------------------
  *
  * TABLE OF CONTENTS
  *
- * All sections are titled with something along the lines of '#CONTENT-NAME'.
- * In the contents, it would be listed as Content-Name.
- *
  * BASE
- * CSS-Reset..............Resets all generic elements, thanks to Eric Meyer.
  * Body...................Sets all elements which cannot be tied to a specific
  *                        section.
  * Type-Base..............Defines basic styles and sizes for all text based
@@ -29,57 +27,9 @@
  */
 
 
-/*----------------------------------------*\
-    #CSS-RESET
-\*----------------------------------------*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section { display: block; }
-
-body { line-height: 1; }
-
-ol, ul { list-style: none; }
-
-blockquote, q { quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-
-
-/*----------------------------------------*\
-    #BODY
-\*----------------------------------------*/
+/**
+ * ==== Body & Core ====
+ */
 
 body {
     font-family: Helvetica, Arial, sans-serif;
@@ -96,11 +46,21 @@ hr {
     border-bottom: solid 1px #E0E0E0;
 }
 
+/* Clearfix - Credit to http://nicolasgallagher.com/micro-clearfix-hack/ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+    .cf:after { clear: both; }
+
+    .cf { *zoom: 1; }
 
 
-/*----------------------------------------*\
-    #TYPE-BASE
-\*----------------------------------------*/
+/**
+ * ==== Type-Base ====
+ */
 
 /* Headings */
 
@@ -262,9 +222,9 @@ a {
 
 
 
-/*----------------------------------------*\
-    #LISTS
-\*----------------------------------------*/
+/**
+ * ==== Lists ====
+ */
 
 ol, ul, dl {
     display: block;
@@ -309,9 +269,9 @@ dl dt {
     }
 
 
-/*----------------------------------------*\
-    #TABLES
-\*----------------------------------------*/
+/**
+ * ==== Table ====
+ */
 
 table {
     margin-bottom: 2rem;
@@ -330,9 +290,9 @@ table {
 
 
 
-/*----------------------------------------*\
-    #FORMS
-\*----------------------------------------*/
+/**
+ * ==== Forms ====
+ */
 
 form {
     display: block;
@@ -488,9 +448,9 @@ a.bttn.inline-form  {
 .form-xlarge { width: 25rem !important; }
 
 
-/*----------------------------------------*\
-    #GRID
-\*----------------------------------------*/
+/**
+ * ==== [Extra] Grid ====
+ */
 
 .col {
     border:0px solid rgba(0,0,0,0);
@@ -530,9 +490,9 @@ a.bttn.inline-form  {
 }
 
 
-/*----------------------------------------*\
-    #HELPER-CLASSES
-\*----------------------------------------*/
+/**
+ * ==== [Extra] Helper Classes ====
+ */
 
 /* Floats */
 .pos-left { float: left; }
@@ -671,20 +631,9 @@ a.bttn.inline-form  {
 .t-c { text-align: center; }
 .t-r { text-align: right; }
 
-/* Clearfix - Credit to http://nicolasgallagher.com/micro-clearfix-hack/ */
-.cf:before,
-.cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-    .cf:after { clear: both; }
-
-    .cf { *zoom: 1; }
-
-/*----------------------------------------*\
-    #LIGHTBOX
-\*----------------------------------------*/
+/**
+ * ==== [Extra] Lightbox ====
+ */
 
 img.lightmeup { cursor: pointer; }
 
