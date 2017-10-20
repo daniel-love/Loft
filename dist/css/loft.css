@@ -1,4 +1,4 @@
-~/**
+/**
  * Loft - HTML/CSS Boilerplate
  * https://github.com/daniel-love/Loft
  * License: MIT License (MIT)
@@ -26,6 +26,8 @@
  *
  */
 
+/* Include reset.css */
+@import url('reset.css');
 
 /**
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -286,15 +288,22 @@ table {
     width: 100%;
 }
 
-    table thead tr { border-bottom: solid 3px #dfdfdf;}
-    table thead tr th {
-        padding: .4rem;
-        font-weight: bold;
+    table tr th,
+    table tr td {
+        padding: .5rem;
+        box-sizing: border-box;
+        user-select: contain;
+        border: solid 1px #E0E0E0;
         text-align: left;
     }
 
-    table tbody tr { border-bottom: solid 1px #dfdfdf; }
-    table tbody tr td { padding: .4rem; }
+    table tr th {
+        font-weight: bold;
+        border-bottom: solid 3px #E0E0E0;
+    }
+
+    table tr td {
+    }
 
 
 
@@ -321,8 +330,8 @@ label {
 }
 
 input,
-input[type~"text"],
-input[type~"password"],
+input[type="text"],
+input[type="password"],
 select,
 textarea {
     display: block;
@@ -350,8 +359,8 @@ textarea {
 
     select[multiple] { min-height: 4rem; }
 
-    input[type~radio],
-    input[type~checkbox] {
+    input[type=radio],
+    input[type=checkbox] {
         float: left;
         margin: .2rem .4rem 0 0;
         width: auto;
@@ -359,24 +368,24 @@ textarea {
     }
 
 input:hover,
-input[type~"text"]:hover,
-input[type~"password"]:hover,
+input[type="text"]:hover,
+input[type="password"]:hover,
 select:hover,
 textarea:hover {
     border-color: #cdcdcd;
 }
 
 input:focus,
-input[type~"text"]:focus,
-input[type~"password"]:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
 select:focus,
 textarea:focus {
     border: solid 2px #616161;
     color: #333333;
 }
 
-input[type~"submit"],
-input[type~"button"],
+input[type="submit"],
+input[type="button"],
 button,
 a.bttn {
     margin: .3rem 0 .3rem 0;
@@ -397,16 +406,16 @@ a.bttn {
     border: solid 2px #dfdfdf;
 }
 
-input[type~"submit"]:hover,
-input[type~"button"]:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
 button:hover,
 a.bttn:hover {
     text-decoration: none;
     background: #dfdfdf;
 }
 
-input[type~"submit"]:active,
-input[type~"button"]:active,
+input[type="submit"]:active,
+input[type="button"]:active,
 button:active,
 a.bttn:active {
     border-color: #b0b0b0;
@@ -439,8 +448,8 @@ textarea[disabled] {
     width: 175px !important;
 }
 
-input[type~"submit"].inline-form,
-input[type~"button"].inline-form,
+input[type="submit"].inline-form,
+input[type="button"].inline-form,
 select.inline-form,
 button.inline-form,
 a.bttn.inline-form  {
