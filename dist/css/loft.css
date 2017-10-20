@@ -172,9 +172,10 @@ kbd {
     background-color: #fff;
     border: solid 1px #B4B4B4;
     border-bottom: solid 2px #B4B4B4;
-    -webkit-border-radius: 5px;
-       -moz-border-radius: 5px;
-        border-radius: 5px;
+    box-shadow: inset 0px 1px 3px #ebebeb, 0px 1px 3px #cbcbcb;
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
 }
 
 abbr {
@@ -189,17 +190,21 @@ address {
 
 code,
 pre {
+    user-select: all;
     font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
     font-size: .8rem;
 }
 
 code {
     padding: .1rem .2rem;
-    /*padding: 2px 4px;*/
+    background: #f8f8f8;
+    border: solid 1px #ccc;
     line-height: inherit;
-    color: #B45C19;
-    background: #FFBD8A;
-    border-bottom: solid 2px #FFA557;
+    color: #b43019;
+    /*box-shadow: inset 0px 1px 3px #ebebeb, 0px 1px 3px #cbcbcb;*/
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
 }
 
 pre {
