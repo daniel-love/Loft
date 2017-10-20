@@ -1,4 +1,4 @@
-/**
+~/**
  * Loft - HTML/CSS Boilerplate
  * https://github.com/daniel-love/Loft
  * License: MIT License (MIT)
@@ -28,7 +28,9 @@
 
 
 /**
- * ==== Body & Core ====
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ * ~~~~~~~~~~~~~~~ Body & Core ~~~~~~~~~~~~~~~
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
 body {
@@ -59,7 +61,9 @@ hr {
 
 
 /**
- * ==== Type-Base ====
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ * ~~~~~~~~~~~~~~~ Type-Base ~~~~~~~~~~~~~~~
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
 /* Headings */
@@ -223,7 +227,9 @@ a {
 
 
 /**
- * ==== Lists ====
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ * ~~~~~~~~~~~~~~~ Lists ~~~~~~~~~~~~~~~
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
 ol, ul, dl {
@@ -270,7 +276,9 @@ dl dt {
 
 
 /**
- * ==== Table ====
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ * ~~~~~~~~~~~~~~~ Table ~~~~~~~~~~~~~~~
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
 table {
@@ -291,7 +299,9 @@ table {
 
 
 /**
- * ==== Forms ====
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ * ~~~~~~~~~~~~~~~ Forms ~~~~~~~~~~~~~~~
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
 form {
@@ -311,8 +321,8 @@ label {
 }
 
 input,
-input[type="text"],
-input[type="password"],
+input[type~"text"],
+input[type~"password"],
 select,
 textarea {
     display: block;
@@ -340,8 +350,8 @@ textarea {
 
     select[multiple] { min-height: 4rem; }
 
-    input[type=radio],
-    input[type=checkbox] {
+    input[type~radio],
+    input[type~checkbox] {
         float: left;
         margin: .2rem .4rem 0 0;
         width: auto;
@@ -349,24 +359,24 @@ textarea {
     }
 
 input:hover,
-input[type="text"]:hover,
-input[type="password"]:hover,
+input[type~"text"]:hover,
+input[type~"password"]:hover,
 select:hover,
 textarea:hover {
     border-color: #cdcdcd;
 }
 
 input:focus,
-input[type="text"]:focus,
-input[type="password"]:focus,
+input[type~"text"]:focus,
+input[type~"password"]:focus,
 select:focus,
 textarea:focus {
     border: solid 2px #616161;
     color: #333333;
 }
 
-input[type="submit"],
-input[type="button"],
+input[type~"submit"],
+input[type~"button"],
 button,
 a.bttn {
     margin: .3rem 0 .3rem 0;
@@ -387,16 +397,16 @@ a.bttn {
     border: solid 2px #dfdfdf;
 }
 
-input[type="submit"]:hover,
-input[type="button"]:hover,
+input[type~"submit"]:hover,
+input[type~"button"]:hover,
 button:hover,
 a.bttn:hover {
     text-decoration: none;
     background: #dfdfdf;
 }
 
-input[type="submit"]:active,
-input[type="button"]:active,
+input[type~"submit"]:active,
+input[type~"button"]:active,
 button:active,
 a.bttn:active {
     border-color: #b0b0b0;
@@ -429,8 +439,8 @@ textarea[disabled] {
     width: 175px !important;
 }
 
-input[type="submit"].inline-form,
-input[type="button"].inline-form,
+input[type~"submit"].inline-form,
+input[type~"button"].inline-form,
 select.inline-form,
 button.inline-form,
 a.bttn.inline-form  {
@@ -449,7 +459,7 @@ a.bttn.inline-form  {
 
 
 /**
- * ==== [Extra] Grid ====
+ * ~~~~ [Extra] Grid ~~~~
  */
 
 .col {
@@ -491,7 +501,9 @@ a.bttn.inline-form  {
 
 
 /**
- * ==== [Extra] Helper Classes ====
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ * ~~~~~~~~~~~~~~~ [Extra] Helper Classes ~~~~~~~~~~~~~~~
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
 /* Floats */
@@ -632,7 +644,9 @@ a.bttn.inline-form  {
 .t-r { text-align: right; }
 
 /**
- * ==== [Extra] Lightbox ====
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ * ~~~~~~~~~~~~~~~ [Extra] Lightbox ~~~~~~~~~~~~~~~
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~=
  */
 
 img.lightmeup { cursor: pointer; }
