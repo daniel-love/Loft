@@ -19,7 +19,7 @@ You'll notice our stylesheet is mostly built up of basic styles, we've not added
 
 ## Suggestions
 
-If you have any suggestions please email them to mail[dot]danlove[at]gmail[dot]me or me[at]derek-martinez[dot]us
+If you have any suggestions please email them to mail[dot]danlove[at]gmail[dot]me or me[at]derek-martinez[dot]us.
 
 ## Contributors
 
