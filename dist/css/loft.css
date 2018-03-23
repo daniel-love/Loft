@@ -51,6 +51,7 @@ time, mark, audio, video {
     border: 0;
     font-size: 100%;
     font: inherit;
+    box-sizing: border-box;
     vertical-align: baseline;
 }
 
@@ -503,7 +504,7 @@ a.bttn.inline-form  {
                     background-clip:padding-box !important;
 }
 
-@media screen and (min-width: 0px) {
+@media screen and (min-width: 800px) {
 
     .col {
         margin-left:3%;
@@ -529,6 +530,12 @@ a.bttn.inline-form  {
     }
 }
 
+@media screen and (max-width: 800px) {
+    .col {
+        display: block;
+        margin: none;
+    }
+}
 
 /*----------------------------------------*\
     #HELPER-CLASSES
