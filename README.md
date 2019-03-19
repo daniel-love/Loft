@@ -6,11 +6,11 @@ A simple HTML/CSS boilerplate with a hint of JavaScript.
 
 We're not jumping on the bandwagon and trying to make the next Bootstrap, because we don't want that. What we're doing is making something to make our lives easier. We're fed up of rewriting the same styles and the same JavaScript for projects.
 
-So we made Loft - Loft is a simple collection of CSS and JS files to start off your project. Loft contains:
+So we made Loft - a simple collection of CSS and JS files to start off your project. Loft contains:
 
 - A CSS Reset [by Eric Meyer](https://meyerweb.com/eric/tools/css/reset/index.html).
-- Pre styles HTML elements, such as Headings, Hyperlinks, Preformatted content and tables.
-- A simple HTML/CSS grid.
+- Pre styled HTML elements.
+- A simple HTML/CSS grid (Soon to be fully responsive).
 - A JS Lightbox.
 - A JS Carousel.
 - Placeholder content.
