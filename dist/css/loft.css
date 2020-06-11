@@ -7,9 +7,6 @@
  *
  * TABLE OF CONTENTS
  *
- * All sections are titled with something along the lines of '#CONTENT-NAME'.
- * In the contents, it would be listed as Content-Name.
- *
  * BASE
  * CSS-Reset..............Resets all generic elements, thanks to Eric Meyer.
  * Body...................Sets all elements which cannot be tied to a specific
@@ -29,9 +26,10 @@
  */
 
 
-/*----------------------------------------*\
-    #CSS-RESET
-\*----------------------------------------*/
+/*
+ * Reset
+ * ---------------------------------------------------------------------------
+ */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -76,18 +74,19 @@ table {
     border-spacing: 0;
 }
 
-
-
-/*----------------------------------------*\
-    #BODY
-\*----------------------------------------*/
+/*
+ * Body
+ * ---------------------------------------------------------------------------
+ */
 
 body {
     font-family: Helvetica, Arial, sans-serif;
     width: 100%;
     font-size: 15px;
     font-weight: 300;
-    line-height: 22px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 hr {
@@ -99,54 +98,56 @@ hr {
 
 
 
-/*----------------------------------------*\
-    #TYPE-BASE
-\*----------------------------------------*/
+/*
+ * Type
+ * ---------------------------------------------------------------------------
+ */
 
 /* Headings */
 
 h1 {
-    margin-bottom: .7rem;
-    font-size: 1.9em;
-    font-weight: 800;
-    line-height: .8em;
+    margin: .50em 0;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
 }
 
 h2 {
-    margin-bottom: .7rem;
-    font-size: 1.6em;
-    font-weight: 600;
-    line-height: .8em;
+    margin: .45em 0;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1;
 }
 
 h3 {
-    margin-bottom: .7rem;
-    font-size: 1.3em;
-    font-weight: 600;
-    line-height: .9em;
+    margin: .50em 0;
+    font-size: 1.4rem;
+    font-weight: 800;
+    line-height: 1;
 }
 
 h4 {
-    margin-bottom: .7rem;
-    font-size: 1.2em;
-    font-weight: 600;
-    line-height: .8em;
+    margin: .45em 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1;
 }
 
 h5 {
-    margin-bottom: .7rem;
-    font-size: 1.3em;
-    font-weight: 200;
-    line-height: .9em;
+    margin: .61em 0;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1;
 }
 
-h6 {sed
-    margin-bottom: .5rem;
-    font-size: .8em;
-    font-weight: 900;
-    line-height: .8em;
+h6 {
+    margin: .60em 0;
+    font-size: .90rem;
+    font-weight: 600;
+    line-height: 1;
     text-transform: uppercase;
 }
+
 
 
 /* Paragraph */
@@ -155,7 +156,7 @@ p { margin: .3rem 0 1rem 0; }
 
     p.lead {
         font-size: 115%;
-        line-height: 1.5em;
+        line-height: 1.5;
     }
 
 
@@ -163,10 +164,10 @@ p { margin: .3rem 0 1rem 0; }
 
 blockquote {
     display: block;
-    margin: 2rem 0 2.5rem 0;
-    font-size: 1.4em;
+    margin: 2rem 0 2.5rem 2rem;
+    font-size: 1.4rem;
     font-weight: 100;
-    line-height: 1.5em;
+    line-height: 1.5;
 }
 
     blockquote p {
@@ -178,12 +179,14 @@ blockquote {
         color: inherit;
     }
 
-    blockquote span {
+    blockquote span,
+    blockquote cite {
         display: block;
         font-size: 80%;
         color: #676767
     }
-        blockquote span:before {
+        blockquote span:before,
+        blockquote cite:before {
             content: "- ";
         }
 
@@ -212,6 +215,16 @@ kbd {
         border-radius: 5px;
 }
 
+sub {
+    font-size: 75%;
+    vertical-align: sub;
+}
+
+sup {
+    font-size: 75%;
+    vertical-align: super;
+}
+
 abbr {
     border-bottom: dashed 1px #333;
     cursor: help;
@@ -225,16 +238,13 @@ address {
 code,
 pre {
     font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
-    font-size: .8rem;
+    font-size: .9rem;
 }
 
 code {
     padding: .1rem .2rem;
-    /*padding: 2px 4px;*/
-    line-height: inherit;
-    color: #B45C19;
-    background: #FFBD8A;
-    border-bottom: solid 2px #FFA557;
+    line-height: 1;
+    color: #a71818;
 }
 
 pre {
@@ -263,9 +273,10 @@ a {
 
 
 
-/*----------------------------------------*\
-    #LISTS
-\*----------------------------------------*/
+/*
+ * Lists
+ * ---------------------------------------------------------------------------
+ */
 
 ol, ul, dl {
     display: block;
@@ -281,9 +292,16 @@ ol li {
     margin: 3.5px 0;
     width: inherit;
     list-style: decimal outside;
+    line-height: 1.3;
 }
-    ol li > ol li { list-style: lower-alpha inside; }
-        ol li > ol li > ol li { list-style: lower-roman inside; }
+    ol li > ol li {
+        margin: 0;
+        list-style: lower-alpha inside;
+     }
+        ol li > ol li > ol li {
+            margin: 0;
+            list-style: lower-roman inside;
+        }
 
 
 /* Unordered List */
@@ -292,8 +310,12 @@ ul li {
     margin: .2rem 0;
     width: inherit;
     list-style: disc outside;
+    line-height: 1.3;
 }
-    ul li > ul li { list-style: circle inside; }
+    ul li > ul li {
+        margin: 0;
+        list-style: circle inside;
+    }
 
 
 /* Definition List */
@@ -310,17 +332,27 @@ dl dt {
     }
 
 
-/*----------------------------------------*\
-    #TABLES
-\*----------------------------------------*/
+/*
+ * Tables
+ * ---------------------------------------------------------------------------
+ */
 
 table {
     margin-bottom: 2rem;
     width: 100%;
 }
 
-    table thead tr { border-bottom: solid 3px #dfdfdf;}
-    table thead tr th {
+table caption {
+    margin: .50rem 0 0 0;
+    color: #676767;
+    text-align: left;
+    caption-side: bottom;
+}
+
+    table thead tr { border-bottom: solid 3px #dfdfdf; }
+
+    table thead tr th,
+    table tr th {
         padding: .4rem;
         font-weight: bold;
         text-align: left;
@@ -331,9 +363,10 @@ table {
 
 
 
-/*----------------------------------------*\
-    #FORMS
-\*----------------------------------------*/
+/*
+ * Forms
+ * ---------------------------------------------------------------------------
+ */
 
 form {
     display: block;
@@ -347,9 +380,14 @@ form {
 label {
     display: block;
     font-size: 85%;
-    font-weight: bold;
+    font-weight: bolder;
+    color: #666666;
     cursor: pointer;
 }
+
+    label.normal { /* Used for nested checkboxes etc */
+        color: #000;
+    }
 
 input,
 input[type="text"],
@@ -365,16 +403,16 @@ textarea {
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
-    -webkit-transition: .05s linear;
-       -moz-transition: .05s linear;
-            transition: .05s linear;
     font-family: inherit;
     font-size: inherit;
     font-weight: inherit;
     line-height: inherit;
     color: #161616;
     background: #FFFFFF;
-    border: solid 2px #dfdfdf;
+    border: solid 1px #dfdfdf;
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
 }
 
     textarea { height: 68px; }
@@ -402,7 +440,7 @@ input[type="text"]:focus,
 input[type="password"]:focus,
 select:focus,
 textarea:focus {
-    border: solid 2px #616161;
+    border: solid 1px #616161;
     color: #333333;
 }
 
@@ -410,22 +448,22 @@ input[type="submit"],
 input[type="button"],
 button,
 a.bttn {
-    margin: .3rem 0 .3rem 0;
-    padding: 1rem 1rem;
+    margin: .4rem 0 .4rem 0;
+    padding: 1rem 1.5rem;
     width: auto;
     outline: none;
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
-    -webkit-transition: .07s linear;
-       -moz-transition: .07s linear;
-            transition: .07s linear;
     font-family: inherit;
     font-weight: normal;
-    line-height: .2em;
-    color: #444444;
-    background: #FFFFFF;
-    border: solid 2px #dfdfdf;
+    line-height: .4;
+    color: #fafafa;
+    background: #0360c2;
+    border: solid 1px #0360c2;
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
 }
 
 input[type="submit"]:hover,
@@ -433,15 +471,17 @@ input[type="button"]:hover,
 button:hover,
 a.bttn:hover {
     text-decoration: none;
-    background: #dfdfdf;
+    background: #04468c;
+    border: solid 1px #0360c2;
 }
 
 input[type="submit"]:active,
 input[type="button"]:active,
 button:active,
 a.bttn:active {
-    border-color: #b0b0b0;
-    background: #d1d1d1;
+    text-decoration: none;
+    background: #00366f;
+    border: solid 1px #00366f;
 }
 
 /* Disabled State */
@@ -489,9 +529,10 @@ a.bttn.inline-form  {
 .form-xlarge { width: 25rem !important; }
 
 
-/*----------------------------------------*\
-    #GRID
-\*----------------------------------------*/
+/*
+ * Grid
+ * ---------------------------------------------------------------------------
+ */
 
 .col {
     border:0px solid rgba(0,0,0,0);
@@ -537,9 +578,10 @@ a.bttn.inline-form  {
     }
 }
 
-/*----------------------------------------*\
-    #HELPER-CLASSES
-\*----------------------------------------*/
+/*
+ * Helper Classes
+ * ---------------------------------------------------------------------------
+ */
 
 /* Floats */
 .pos-left { float: left; }
@@ -689,9 +731,10 @@ a.bttn.inline-form  {
 
     .cf { *zoom: 1; }
 
-/*----------------------------------------*\
-    #LIGHTBOX
-\*----------------------------------------*/
+/*
+ * Lightbox
+ * ---------------------------------------------------------------------------
+ */
 
 img.lightmeup { cursor: pointer; }
 

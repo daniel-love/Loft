@@ -28,7 +28,9 @@
 
             <h1>Long Paragraph</h1>
             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+            <p>This paragraph is nested inside an article. It contains many different, sometimes useful, <a href="https://www.w3schools.com/tags/">HTML5 tags</a>. Of course there are classics like <em>emphasis</em>, <strong>strong</strong>, and <small>small</small> but there are many others as well. Hover the following text for abbreviation tag: <abbr title="abbreviation">abbr</abbr>. Similarly, you can use acronym tag like this: <acronym title="For The Win">ftw</acronym>. You can define <del>deleted text</del> which often gets replaced with <ins>inserted</ins> text.</p>
+            <p>You can also use <kbd>keyboard text</kbd>, which sometimes is styled similarly to the <code>&lt;code&gt;</code> or <samp>samp</samp> tags. Even more specifically, there is a tag just for <var>variables</var>. Not to be mistaken with blockquotes
+              below, the quote tag lets you denote something as <q>quoted text</q>. Lastly don't forget the sub (H<sub>2</sub>O) and sup (E = MC<sup>2</sup>) tags. </p>
 
             <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
 
@@ -121,11 +123,11 @@
                 <input type="text" name="name" id="name" value="" tabindex="1" placeholder="Hello World" />
 
                 <input type="radio" name="radio-choice" id="radio-choice-1" tabindex="2" value="choice-1" />
-                <label for="radio-choice-1">Choice 1</label>
+                <label for="radio-choice-1" class="normal">Choice 1</label>
                 <input type="radio" name="radio-choice" id="radio-choice-2" tabindex="3" value="choice-2" />
-                <label for="radio-choice-2">Choice 2</label>
+                <label for="radio-choice-2" class="normal">Choice 2</label>
                 <input type="radio" name="radio-choice" id="radio-choice-3" tabindex="4" value="choice-3" />
-                <label for="radio-choice-3">Choice 3</label>
+                <label for="radio-choice-3" class="normal">Choice 3</label>
                 <br />
 
                 <label for="select-choice">Select Dropdown Choice:</label>
@@ -145,7 +147,7 @@
                 <label for="textarea">Textarea:</label>
                 <textarea cols="40" rows="8" name="textarea" id="textarea" placeholder="Enter your text here..."></textarea>
 
-                <label for="checkbox"><input type="checkbox" name="checkbox" id="checkbox" /> Checkbox</label>
+                <label for="checkbox" class="normal"><input type="checkbox" name="checkbox" /> Checkbox</label>
 
                 <input type="submit" value="Submit" />
             </form>
@@ -154,34 +156,34 @@
 
             <h2>Table</h2>
             <table>
-                <thead>
-                    <tr>
-                        <th>Table Header 1</th>
-                        <th>Table Header 2</th>
-                        <th>Table Header 3</th>
-                        <th>Table Header 4</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Table Content 1</td>
-                        <td>Table Content 2</td>
-                        <td>Table Content 3</td>
-                        <td>Table Content 4</td>
-                    </tr>
-                    <tr>
-                        <td>Table Content 1</td>
-                        <td>Table Content 2</td>
-                        <td>Table Content 3</td>
-                        <td>Table Content 4</td>
-                    </tr>
-                    <tr>
-                        <td>Table Content 1</td>
-                        <td>Table Content 2</td>
-                        <td>Table Content 3</td>
-                        <td>Table Content 4</td>
-                    </tr>
-                </tbody>
+              <caption>Tables can have captions now.</caption>
+              <tbody>
+                <tr>
+                  <th>Person</th>
+                  <th>Number</th>
+                  <th>Third Column</th>
+                </tr>
+                <tr>
+                  <td>Someone Lastname</td>
+                  <td>900</td>
+                  <td>Nullam quis risus eget urna mollis ornare vel eu leo.</td>
+                </tr>
+                <tr>
+                  <td><a href="#">Person Name</a></td>
+                  <td>1200</td>
+                  <td>Vestibulum id ligula porta felis euismod semper. Donec ullamcorper nulla non metus auctor fringilla.</td>
+                </tr>
+                <tr>
+                  <td>Another Person</td>
+                  <td>1500</td>
+                  <td>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit.</td>
+                </tr>
+                <tr>
+                  <td>Last One</td>
+                  <td>2800</td>
+                  <td>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</td>
+                </tr>
+              </tbody>
             </table>
 
             <hr>
