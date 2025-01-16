@@ -342,26 +342,31 @@ table {
     width: 100%;
 }
 
-table caption {
-    margin: .50rem 0 0 0;
-    color: #676767;
+/* Table Header */
+table thead tr th,
+table thead tr td,
+table tr th {
+    padding: .4rem;
+    border-bottom: solid 2px #dfdfdf;
+    font-weight: bold;
     text-align: left;
-    caption-side: bottom;
 }
 
-    table thead tr { border-bottom: solid 3px #dfdfdf; }
+table tr th:only-of-type {
+    border-bottom: solid 1px #dfdfdf;
+}
 
-    table thead tr th,
-    table tr th {
-        padding: .4rem;
-        font-weight: bold;
-        text-align: left;
-    }
+/* Table Body */
+table tbody tr,
+table tr {
+    border-bottom: solid 1px #dfdfdf;
+}
 
-    table tbody tr { border-bottom: solid 1px #dfdfdf; }
-    table tbody tr td { padding: .4rem; }
-
-
+/* Table Cell */
+table tbody tr td,
+table tr td {
+    padding: .4rem;
+}
 
 /*
  * Forms
@@ -374,7 +379,6 @@ form {
     width: 100%;
     overflow: none;
     box-sizing: border-box;
-    vertical-align: middle;
 }
 
 label {
@@ -729,7 +733,7 @@ a.bttn.inline-form  {
 
     .cf:after { clear: both; }
 
-    .cf { *zoom: 1; }
+    .cf { zoom: 1; }
 
 /*
  * Lightbox
